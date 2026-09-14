@@ -11,7 +11,7 @@ Turn a research question into a coherent learning experience, not a pile of note
 
 ## Operating contract
 
-- Produce the final artifact as a single HTML file unless the user explicitly requests another format.
+- Produce every report as a single HTML file. Supporting notes, tables, or intermediate artifacts may be created during research, but the final report is always HTML.
 - Write the learning content in the user's language; keep technical identifiers, URLs, and source titles in their original form when useful.
 - Aim for **at least 100 relevant sources** for a broad topic. Count sources only when they materially support the subject. Never pad the bibliography with duplicates, search-result pages, weak aggregators, or sources that were not consulted.
 - If the topic is genuinely narrow or the available evidence cannot support 100 sources, state the shortfall in a research note inside the artifact and explain the selection criterion. Never invent sources or citations to reach the number.
@@ -77,6 +77,8 @@ Explain technical terms at first use in plain language, then use the precise ter
 
 ### 5. Design the HTML artifact
 
+Read [`references/html-style-guide.md`](references/html-style-guide.md) before creating the document. It defines the required visual direction: light mode by default, monochrome presentation, no borders or cards, restrained typography, generous whitespace, and offline-friendly responsive layout.
+
 Create one semantic, self-contained HTML document with:
 
 - a clear title, subtitle, research date, scope, assumptions, and reading-time estimate;
@@ -90,7 +92,7 @@ Create one semantic, self-contained HTML document with:
 - a final Sources section with one numbered entry per cited source;
 - a research note describing source count, selection method, date range, limitations, and unresolved uncertainty.
 
-Use CSS variables and include dark mode with a theme toggle, local persistence, and an apply-before-paint script. Keep the file runnable offline: inline CSS, JavaScript, SVG, and essential assets. Avoid external runtime dependencies unless the user explicitly requests them.
+Use CSS variables and include optional dark mode with a theme toggle and local persistence. **Light mode must be the default**, regardless of the operating system preference; only an explicitly saved dark-mode choice may activate dark mode before paint. Keep the file runnable offline: inline CSS, JavaScript, SVG, and essential assets. Avoid external runtime dependencies unless the user explicitly requests them.
 
 Do not make decorative charts that imply precision without data. Label axes, units, dates, denominators, and uncertainty. If a visual is conceptual rather than empirical, label it as a model or diagram.
 
@@ -130,7 +132,8 @@ Before delivering, verify all of the following:
 - diagrams match the surrounding explanation and include accessible text;
 - no placeholder text, fabricated URL, duplicate source, or unsupported statistic remains;
 - the HTML opens offline and has no broken internal links;
-- the document works on narrow screens and in dark mode.
+- the document works on narrow screens and in optional dark mode, while opening in light mode by default;
+- the visual style follows `references/html-style-guide.md`: monochrome, minimal, borderless, and free of card-based UI.
 
 For a large bibliography, validate mechanically before visual review: parse the HTML, collect all `id` values, check every internal `href`, count citation anchors and source anchors, and confirm that every source backlink resolves. Separately check external source URLs with HTTP requests, then label the result accurately (for example, “URL verified” versus “content reviewed”). If tools are available, inspect the generated file in a browser and report the validation result briefly alongside the artifact.
 
