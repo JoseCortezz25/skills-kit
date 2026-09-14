@@ -32,6 +32,8 @@ Every report must be a self-contained HTML document that works offline and conta
 
 Reports should be delivered as HTML even when the research process also produces notes, tables, or intermediate artifacts. Those intermediate artifacts support the work but are not the primary deliverable.
 
+The complete runnable example is [`references/report-template.html`](report-template.html). Use it as a starting point for the document shell, typography, spacing, theme behavior, table of contents, chapter structure, and source list. Adapt the content and sections to the research topic without weakening the visual rules above.
+
 ## Layout rules
 
 Use a centered shell with a responsive width and a narrow reading column. On small screens, reduce horizontal padding without reducing text size below a comfortable reading size. Keep the table of contents simple: a plain numbered list or short list of links is preferred.
