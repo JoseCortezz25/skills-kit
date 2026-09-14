@@ -20,6 +20,7 @@ More info: https://skills.sh/
 - **goal-prompting** — turns vague requests into strong /goal prompts for coding agents.
 - **nextjs-project-setup** — best practices for starting a new Next.js project.
 - **react-19** — React 19 patterns, especially around the React Compiler and memoization.
+- **research-to-learning-html** — turns deep, source-grounded research into self-contained educational HTML books. Created by JoseCortezz25, version 0.0.1.
 - **tailwind-4** — Tailwind CSS 4 styling patterns and best practices.
 - **typescript** — TypeScript strict patterns, types, interfaces, and generics.
 - **zod-4** — Zod 4 schema validation patterns.
