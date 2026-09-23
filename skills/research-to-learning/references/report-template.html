@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Read a Research Report</title>
+  <script>
+    (() => {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark') document.documentElement.classList.add('dark');
+    })();
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #fff;
+      --ink: #111;
+      --muted: #666;
+      --soft: #f2f2f2;
+      --measure: 46rem;
+    }
+    html.dark {
+      color-scheme: dark;
+      --paper: #111;
+      --ink: #f5f5f5;
+      --muted: #aaa;
+      --soft: #1c1c1c;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.75 Georgia, 'Times New Roman', serif;
+    }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .shell { width: min(100% - 3rem, 72rem); margin: 0 auto; }
+    header { padding: 5rem 0 4rem; }
+    .eyebrow, .meta, nav, .label, footer { font: 0.72rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .08em; text-transform: uppercase; }
+    .eyebrow, .label, .meta, footer { color: var(--muted); }
+    h1, h2, h3 { font-family: Arial, Helvetica, sans-serif; line-height: 1.08; letter-spacing: -.04em; }
+    h1 { max-width: 12ch; margin: 1rem 0 1.25rem; font-size: clamp(3.5rem, 9vw, 7rem); }
+    h2 { margin: 0 0 1rem; font-size: clamp(2rem, 4vw, 3.25rem); }
+    h3 { margin: 2.5rem 0 .5rem; font-size: 1.2rem; letter-spacing: -.02em; }
+    .dek { max-width: 36rem; margin: 0; font-size: clamp(1.15rem, 2vw, 1.45rem); color: var(--muted); }
+    .meta { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 2rem; }
+    .toolbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 0; }
+    button { border: 0; background: var(--ink); color: var(--paper); padding: .65rem .9rem; font: inherit; cursor: pointer; }
+    nav { padding: 1.25rem 0 1.5rem; background: var(--soft); }
+    nav ol { width: min(100% - 2rem, var(--measure)); margin: 0 auto; padding-left: 1.5rem; columns: 2; }
+    nav li { padding: .2rem 0; }
+    main { width: min(100%, var(--measure)); margin: 5rem auto; }
+    section { margin-bottom: 6rem; scroll-margin-top: 2rem; }
+    .chapter-number { display: block; margin-bottom: .8rem; color: var(--muted); font: 0.72rem ui-monospace, SFMono-Regular, Menlo, monospace; }
+    p { margin: 0 0 1.25rem; }
+    .lead { font-size: 1.35rem; line-height: 1.5; }
+    blockquote { margin: 2rem 0; padding: 1rem 0 1rem 1.5rem; background: var(--soft); font-size: 1.25rem; }
+    .note { margin: 2rem 0; padding: 1rem 0; font-size: .95rem; color: var(--muted); }
+    .sources { padding-top: 1rem; }
+    .sources li { margin-bottom: .75rem; }
+    footer { padding: 2rem 0 4rem; }
+    @media (max-width: 42rem) {
+      .shell { width: min(100% - 2rem, 72rem); }
+      header { padding-top: 3rem; }
+      nav ol { columns: 1; }
+      main { margin-top: 3rem; }
+    }
+    @media print {
+      .toolbar, nav { display: none; }
+      body { color: #000; background: #fff; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="toolbar">
+      <span class="eyebrow">Research to Learning / Example</span>
+      <button id="theme-toggle" type="button" aria-label="Switch color theme">Theme</button>
+    </div>
+    <header>
+      <div class="eyebrow">A short learning report</div>
+      <h1>How to read a research report</h1>
+      <p class="dek">A quiet, focused guide to moving from a claim on the page to a conclusion you can trust.</p>
+      <div class="meta"><span>12 min read</span><span>14 September 2026</span><span>Evidence literacy</span></div>
+    </header>
+  </div>
+
+  <nav aria-label="Table of contents">
+    <ol>
+      <li><a href="#question">Start with the question</a></li>
+      <li><a href="#evidence">Follow the evidence</a></li>
+      <li><a href="#limits">Look for the limits</a></li>
+      <li><a href="#practice">A practical reading loop</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <section id="question">
+      <span class="chapter-number">01 / Orientation</span>
+      <h2>Start with the question</h2>
+      <p class="lead">A research report is not a container of facts. It is an answer to a question, produced through a method, under particular conditions.</p>
+      <p>Before judging the answer, name the question. What is being explained, compared, measured, or predicted? A precise question gives you a boundary: it tells you which conclusions belong to the report and which ones are being smuggled in by the reader.</p>
+      <blockquote>Do not ask first, “Is this true?” Ask, “What exactly is being claimed, and what would count as evidence for it?”</blockquote>
+      <p>The next step follows naturally: once the claim is clear, inspect the path used to support it.</p>
+    </section>
+
+    <section id="evidence">
+      <span class="chapter-number">02 / Mechanism</span>
+      <h2>Follow the evidence</h2>
+      <p>Evidence is not the same as volume. A long bibliography can still leave the central claim unsupported. Look for the connection between the claim, the observation, and the method that produced the observation.</p>
+      <h3>Three questions to keep beside the page</h3>
+      <p><strong>What was observed?</strong> Separate measurements from interpretations. <strong>How was it observed?</strong> Check the population, sample, instrument, timeframe, and comparison. <strong>What does it support?</strong> Test whether the conclusion is narrower or broader than the evidence allows.</p>
+      <p class="note"><span class="label">Reading note</span><br>In a finished report, citations should appear immediately after important factual claims and lead to a numbered source list. Citation density should follow claim importance, not decorate every paragraph.</p>
+    </section>
+
+    <section id="limits">
+      <span class="chapter-number">03 / Judgment</span>
+      <h2>Look for the limits</h2>
+      <p>Good research does not eliminate uncertainty. It makes uncertainty visible. A limitation may come from the data, the design, the definition of a term, or the conditions under which the result was obtained.</p>
+      <p>When two sources disagree, do not rush to choose a winner. First ask whether they studied different populations, used different definitions, measured different outcomes, or operated in different periods. Disagreement often becomes useful once its dimensions are named.</p>
+      <p>That habit turns a report from an authority to obey into a model to examine.</p>
+    </section>
+
+    <section id="practice">
+      <span class="chapter-number">04 / Application</span>
+      <h2>A practical reading loop</h2>
+      <p>Read once for structure. Read again for claims. On the third pass, trace the strongest claims to their sources and write down the assumptions that connect evidence to conclusion.</p>
+      <p>Finish by writing a five-sentence explanation in your own words: the question, the method, the main finding, the strongest caveat, and the decision the evidence can—or cannot—justify.</p>
+      <p>This loop is deliberately small. The point is not to collect more notes. It is to leave with a clearer model of what is known, how it is known, and where the model stops.</p>
+    </section>
+
+    <section class="sources" id="sources">
+      <span class="chapter-number">Sources / Example format</span>
+      <h2>Sources</h2>
+      <ol>
+        <li id="source-1">Example source entry with title, publisher, date, and stable URL. <a href="#question" aria-label="Back to text">↩</a></li>
+        <li id="source-2">Example source entry showing the compact numbered bibliography style. <a href="#evidence" aria-label="Back to text">↩</a></li>
+      </ol>
+    </section>
+  </main>
+
+  <div class="shell"><footer>Prepared as a visual direction sample · black and white · no borders · offline-ready</footer></div>
+  <script>
+    const toggle = document.querySelector('#theme-toggle');
+    toggle.addEventListener('click', () => {
+      const dark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
