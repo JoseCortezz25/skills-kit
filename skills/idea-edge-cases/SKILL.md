@@ -1,5 +1,5 @@
 ---
-name: feature-idea-discovery
+name: idea-edge-cases
 description: "Trigger: feature idea, feature concept, story, pre-implementation discovery. Surface unresolved decisions and consequential gaps before design or development."
 license: Apache-2.0
 metadata:
