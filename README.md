@@ -16,6 +16,7 @@ More info: https://skills.sh/
 
 - **atomic-design** — guide for creating, splitting, and refactoring UI components using Atomic Design.
 - **commit-conventions** — helps write and enforce proper Git commit messages.
+- **idea-edge-cases** — surfaces missing decisions and failure scenarios in unimplemented feature ideas, with a prioritized gap table.
 - **forms** — React Hook Form + Zod patterns for building and validating forms.
 - **goal-prompting** — turns vague requests into strong /goal prompts for coding agents.
 - **nextjs-project-setup** — best practices for starting a new Next.js project.
