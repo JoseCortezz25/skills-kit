@@ -15,10 +15,11 @@ More info: https://skills.sh/
 ## Available skills
 
 - **atomic-design** — guide for creating, splitting, and refactoring UI components using Atomic Design.
+- **code-edge-cases** — analyzes existing code for grounded edge cases and candidate tests, with a prioritized scenario table.
 - **commit-conventions** — helps write and enforce proper Git commit messages.
+- **idea-edge-cases** — surfaces missing decisions and failure scenarios in unimplemented feature ideas, with a prioritized gap table.
 - **forms** — React Hook Form + Zod patterns for building and validating forms.
 - **goal-prompting** — turns vague requests into strong /goal prompts for coding agents.
-- **code-edge-cases** — analyzes existing code for grounded edge cases and candidate tests, with a prioritized scenario table.
 - **nextjs-project-setup** — best practices for starting a new Next.js project.
 - **react-19** — React 19 patterns, especially around the React Compiler and memoization.
 - **research-to-learning** — turns a topic into deep, verifiable learning material: decomposes it into subtopics, delegates research to subagents, preserves the raw content of every source on disk, verifies relevance and authority, resolves contradictions and gaps, then consolidates a long-form Markdown guide with an optional HTML rendering. Created by JoseCortezz25, version 0.1.0.
