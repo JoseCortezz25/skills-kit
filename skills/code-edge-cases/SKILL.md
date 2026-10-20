@@ -1,5 +1,5 @@
 ---
-name: implementation-edge-case-analysis
+name: code-edge-cases
 description: "Trigger: implementation edge cases, code-grounded analysis, candidate tests. Find and prioritize plausible failure scenarios in an existing or partially implemented feature."
 license: Apache-2.0
 metadata:
