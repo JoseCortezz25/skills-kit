@@ -4,11 +4,29 @@ My personal skills kit: a curated set of skills I use in my day-to-day workflow 
 
 ## Install
 
-You can install these skills with:
+Install everything:
 
 ```bash
 npx skills add JoseCortezz25/skills-kit
 ```
+
+Install a single skill (example with `random-word`):
+
+```bash
+npx skills add JoseCortezz25/skills-kit --skill random-word
+```
+
+List what's available without installing:
+
+```bash
+npx skills add JoseCortezz25/skills-kit --list
+```
+
+Useful flags:
+
+- `-g` installs globally instead of per-project
+- `-a <agent>` picks the target agent (e.g. `-a claude-code`), `'*'` for all
+- `-y` skips confirmation prompts
 
 More info: https://skills.sh/
 
@@ -21,6 +39,7 @@ More info: https://skills.sh/
 - **forms** — React Hook Form + Zod patterns for building and validating forms.
 - **goal-prompting** — turns vague requests into strong /goal prompts for coding agents.
 - **nextjs-project-setup** — best practices for starting a new Next.js project.
+- **random-word** — runs a lateral-thinking session with De Bono's random stimulus: draws an unrelated word and links it to the problem through stepping-stone chains.
 - **react-19** — React 19 patterns, especially around the React Compiler and memoization.
 - **research-to-learning** — turns a topic into deep, verifiable learning material: decomposes it into subtopics, delegates research to subagents, preserves the raw content of every source on disk, verifies relevance and authority, resolves contradictions and gaps, then consolidates a long-form Markdown guide with an optional HTML rendering. Created by JoseCortezz25, version 0.1.0.
 - **tailwind-4** — Tailwind CSS 4 styling patterns and best practices.
