@@ -1,0 +1,389 @@
+# Base list for the draw. One word per line; lines starting with # are ignored.
+# Criterion: concrete nouns from very different fields, not tied to a single domain.
+# Add your own. Categories only keep things tidy: the script draws from the whole list,
+# without filtering by category (filtering would be choosing the stimulus).
+
+# Everyday objects
+umbrella
+scissors
+mirror
+padlock
+ladder
+rope
+button
+zipper
+hourglass
+compass
+teapot
+spoon
+frying pan
+strainer
+funnel
+sponge
+soap
+towel
+pillow
+curtain
+window
+door
+key
+mailbox
+street lamp
+candle
+match
+flashlight
+adhesive tape
+magnet
+pin
+thimble
+needle
+thread
+coat rack
+basket
+paper bag
+envelope
+stamp
+label
+suitcase
+backpack
+belt
+shoe
+sock
+hat
+glove
+scarf
+walking stick
+brush
+comb
+handkerchief
+light bulb
+socket
+switch
+doorbell
+alarm clock
+calendar
+notebook
+eraser
+pencil
+paintbrush
+chalk
+ruler
+drawing compass
+tape measure
+magnifying glass
+thermometer
+scale
+stopwatch
+traffic light
+
+# Tools and construction
+hammer
+nail
+screw
+screwdriver
+saw
+lever
+pulley
+gear
+spring
+hex nut
+brick
+cement
+scaffolding
+crane
+suspension bridge
+tunnel
+elevator
+escalator
+lock
+hinge
+garden hose
+faucet
+pipe
+cable
+fuse
+welding
+
+# Games, music and performance
+spinning top
+kite
+marble
+dice
+domino
+playing cards
+chess
+jigsaw puzzle
+swing
+seesaw
+drum
+flute
+bell
+whistle
+car horn
+megaphone
+microphone
+stage
+curtain call
+costume
+mask
+juggler
+clown
+magician
+puppet
+piñata
+confetti
+balloon
+
+# Transport and sea
+bicycle
+skateboard
+anchor
+oar
+sailboat
+buoy
+fishing net
+fishhook
+lighthouse
+rudder
+hammock
+railway car
+toll booth
+roundabout
+footbridge
+pier
+raft
+parachute
+hot air balloon
+cable car
+
+# Animals
+ant
+bee
+beehive
+honeycomb
+spider
+spiderweb
+butterfly
+caterpillar
+snail
+turtle
+crab
+jellyfish
+octopus
+dolphin
+whale
+seagull
+owl
+bat
+chameleon
+turkey
+zebra
+giraffe
+elephant
+wolf
+fox
+mole
+kangaroo
+nest
+egg
+feather
+hummingbird
+firefly
+dragonfly
+penguin
+salmon
+
+# Plants and landscape
+root
+seed
+leaf
+branch
+trunk
+moss
+mushroom
+cactus
+sunflower
+bamboo
+fern
+weed
+orchid
+forest
+desert
+swamp
+volcano
+glacier
+cave
+cliff
+coral reef
+tide
+waterfall
+river
+delta
+island
+plateau
+dune
+spring water
+canyon
+trail
+
+# Weather and phenomena
+rainbow
+lightning
+fog
+frost
+storm
+eclipse
+moon
+shooting star
+echo
+shadow
+reflection
+bubble
+dripping
+whirlpool
+avalanche
+wave
+dew
+breeze
+drought
+flood
+
+# Materials and textures
+soot
+foam
+rust
+mold
+ash
+fire
+ember
+smoke
+steam
+ice
+puddle
+mud
+sand
+clay
+wool
+silk
+lace
+leather
+cork
+paper
+cardboard
+rubber
+glass
+crystal
+wood
+marble slab
+bronze
+gold
+salt
+glue
+
+# Food
+bread
+cheese
+chocolate
+honey
+vinegar
+olive
+avocado
+corn
+banana
+lemon
+onion
+garlic
+carrot
+potato
+cassava
+coffee
+brown sugar
+tortilla
+raisin
+ice cream
+soup
+cookie
+butter
+flour
+yeast
+oven
+pressure cooker
+
+# Body and gestures
+fingerprint
+belly button
+eyelash
+bone
+spine
+lung
+heartbeat
+sweat
+yawn
+eyebrow
+knee
+tongue
+nose
+ear
+scar
+smile
+sneeze
+thumb
+
+# Trades and places
+baker
+firefighter
+mail carrier
+watchmaker
+locksmith
+gardener
+sailor
+tailor
+blacksmith
+potter
+shepherd
+lookout
+market
+library
+train station
+airport
+laundromat
+hair salon
+pharmacy
+museum
+workshop
+viewpoint
+town square
+labyrinth
+shortcut
+border
+street corner
+
+# Ideas with shape
+knot
+crack
+spiral
+pendulum
+mosaic
+flag
+coin
+lottery ticket
+auction
+inheritance
+fossil
+ruin
+treasure
+map
+trap
+back door
+hole
+frame
+diagonal
+void
+chain link
+impulse
+portrait
+tribe
+duty
+shield
+tightrope
+barter
