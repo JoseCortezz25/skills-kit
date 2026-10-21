@@ -4,11 +4,29 @@ My personal skills kit: a curated set of skills I use in my day-to-day workflow 
 
 ## Install
 
-You can install these skills with:
+Install everything:
 
 ```bash
 npx skills add JoseCortezz25/skills-kit
 ```
+
+Install a single skill (example with `random-word`):
+
+```bash
+npx skills add JoseCortezz25/skills-kit --skill random-word
+```
+
+List what's available without installing:
+
+```bash
+npx skills add JoseCortezz25/skills-kit --list
+```
+
+Useful flags:
+
+- `-g` installs globally instead of per-project
+- `-a <agent>` picks the target agent (e.g. `-a claude-code`), `'*'` for all
+- `-y` skips confirmation prompts
 
 More info: https://skills.sh/
 
