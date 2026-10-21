@@ -1,5 +1,8 @@
 # Changelog
 
+## Unreleased
+- Added `code-edge-cases` to identify code-grounded edge cases and candidate tests after implementation.
+
 ## 1.0.2
 - Added `random-word`: lateral-thinking sessions with De Bono's random stimulus (draws an unrelated word via `scripts/draw.py`, links it to the problem through stepping-stone chains).
 - Added `idea-edge-cases` to surface assumptions, open decisions, and unconsidered scenarios before implementation.

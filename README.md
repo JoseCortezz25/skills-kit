@@ -33,6 +33,7 @@ More info: https://skills.sh/
 ## Available skills
 
 - **atomic-design** — guide for creating, splitting, and refactoring UI components using Atomic Design.
+- **code-edge-cases** — analyzes existing code for grounded edge cases and candidate tests, with a prioritized scenario table.
 - **commit-conventions** — helps write and enforce proper Git commit messages.
 - **idea-edge-cases** — surfaces missing decisions and failure scenarios in unimplemented feature ideas, with a prioritized gap table.
 - **forms** — React Hook Form + Zod patterns for building and validating forms.
