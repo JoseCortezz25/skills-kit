@@ -9,7 +9,7 @@ Node.js `PreToolUse` / `PostToolUse` hooks with **zero external binary dependenc
 
 ## Binding (per agent, in `settings.json`)
 
-Both `.claude/settings.json` and `.opencode/` config bind the same two hooks to edit/write-class tools. Agent-specific surface stays in the binding; hook logic stays shared. Template in `assets/settings.json`.
+Both `.claude/settings.json` and `.opencode/` config bind the same two hooks from the canonical `.agents/hooks/` location — never a per-runtime copy. Agent-specific surface stays in the binding; hook logic stays shared. Template in `assets/settings.json`.
 
 ## Rules
 
