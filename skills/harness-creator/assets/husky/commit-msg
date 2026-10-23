@@ -1,0 +1,11 @@
+#!/bin/sh
+# commit-msg: Conventional Commits + header <= 100 chars + no Co-Authored-By.
+MSG_FILE="$1"
+HEADER=$(head -n 1 "$MSG_FILE")
+echo "$HEADER" | grep -Eq '^(feat|fix|docs|chore|refactor|test|style|perf|ci|build)(\(.+\))?(!)?: .+' \
+  || { echo "commit-msg: header must be a Conventional Commit (type[(scope)]: subject)" >&2; exit 1; }
+[ "${#HEADER}" -le 100 ] \
+  || { echo "commit-msg: header exceeds 100 chars (${#HEADER})" >&2; exit 1; }
+grep -qi 'co-authored-by' "$MSG_FILE" \
+  && { echo "commit-msg: no Co-Authored-By / AI attribution trailers" >&2; exit 1; }
+exit 0

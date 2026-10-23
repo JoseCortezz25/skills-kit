@@ -1,0 +1,31 @@
+name: PR judge
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  judge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      # Same scripts as local judges — never reimplemented logic.
+      - name: Verify PR conventions
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BODY_FILE=$(mktemp)
+          gh pr view "${{ github.event.pull_request.number }}" --json body --jq .body > "$BODY_FILE"
+          HEAD_MSG=$(git log -1 --format=%s "${{ github.event.pull_request.head.sha }}")
+          node scripts/verify-pr-conventions.mjs \
+            --branch "${{ github.head_ref }}" \
+            --commit "$HEAD_MSG" \
+            --body "$BODY_FILE"
+      - name: Format check
+        run: npm run format:check --if-present
+      - name: Lint
+        run: npm run lint --if-present
+      - name: Typecheck
+        run: npm run typecheck --if-present

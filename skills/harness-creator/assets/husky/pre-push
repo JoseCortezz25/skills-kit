@@ -1,0 +1,9 @@
+#!/bin/sh
+# pre-push: branch validation + typecheck + lint. Slow checks live here, not in pre-commit.
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+case "$BRANCH" in feat/*|fix/*|docs/*|chore/*|refactor/*|test/*) ;; *)
+  echo "pre-push: branch '$BRANCH' must start with feat/|fix/|docs/|chore/|refactor/|test/" >&2
+  exit 1 ;;
+esac
+npm run typecheck --if-present || exit 1
+npm run lint --if-present || exit 1
