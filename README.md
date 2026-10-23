@@ -38,6 +38,7 @@ More info: https://skills.sh/
 - **idea-edge-cases** — surfaces missing decisions and failure scenarios in unimplemented feature ideas, with a prioritized gap table.
 - **forms** — React Hook Form + Zod patterns for building and validating forms.
 - **goal-prompting** — turns vague requests into strong /goal prompts for coding agents.
+- **harness-creator** — scaffolds or audits a project's AI agent harness from technical research: synchronized agent dirs, path-scoped rules, runtime hooks, and deterministic judges.
 - **nextjs-project-setup** — best practices for starting a new Next.js project.
 - **random-word** — runs a lateral-thinking session with De Bono's random stimulus: draws an unrelated word and links it to the problem through stepping-stone chains.
 - **react-19** — React 19 patterns, especially around the React Compiler and memoization.

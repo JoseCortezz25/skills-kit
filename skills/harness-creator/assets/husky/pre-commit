@@ -1,0 +1,10 @@
+#!/bin/sh
+# pre-commit: branch validation + lint-staged + secondary-language format check.
+# Keep thin: validate and delegate. Business logic lives in scripts/, not here.
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+case "$BRANCH" in feat/*|fix/*|docs/*|chore/*|refactor/*|test/*) ;; *)
+  echo "pre-commit: branch '$BRANCH' must start with feat/|fix/|docs/|chore/|refactor/|test/" >&2
+  exit 1 ;;
+esac
+npx lint-staged || exit 1
+# Add secondary-language check here, e.g.: cargo fmt --check

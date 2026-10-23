@@ -2,6 +2,7 @@
 
 ## Unreleased
 - Added `code-edge-cases` to identify code-grounded edge cases and candidate tests after implementation.
+- Added `harness-creator` to scaffold or audit a project's AI agent harness (knowledge, rules, hooks, skills, deterministic judges) from technical research.
 
 ## 1.0.2
 - Added `random-word`: lateral-thinking sessions with De Bono's random stimulus (draws an unrelated word via `scripts/draw.py`, links it to the problem through stepping-stone chains).
