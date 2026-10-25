@@ -1,9 +1,9 @@
 # Changelog
 
-## Unreleased
+## 1.1.0
 - Documented `skills` CLI installation for the `learning` pack and how its five skills run as a single workflow.
 - Added the `learning` pack under `skills/learning/`: `topic-map`, `prerequisite-descent`, `check-and-review`, `teacher-voice`, and `interactive-explorer`. Guided learning from the big picture down through prerequisites, with Markdown progress files and spaced-repetition reviews.
-- Reorganized skills into `skills/engineering/`, `skills/utils/`, and `skills/creative/`. Installation is unchanged: `npx skills add` still discovers every skill and installs it flat.
+- Reorganized skills into category directories: `skills/engineering/`, `skills/utils/`, `skills/creative/`, and `skills/learning/`. Installation is unchanged: `npx skills add` still discovers every skill and installs it flat.
 - Added `code-edge-cases` to identify code-grounded edge cases and candidate tests after implementation.
 - Added `harness-creator` to scaffold or audit a project's AI agent harness (knowledge, rules, hooks, skills, deterministic judges) from technical research.
 
