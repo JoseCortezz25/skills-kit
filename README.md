@@ -38,7 +38,8 @@ Skills are grouped by purpose under `skills/<category>/<skill-name>/SKILL.md`:
 skills/
 ├── engineering/   # writing and reviewing code
 ├── utils/         # agent workflow and tooling
-└── creative/      # ideation, research, and learning
+├── creative/      # ideation and research
+└── learning/      # studying a topic with an agent
 ```
 
 Categories are organizational only. `npx skills add` discovers skills at any depth under `skills/` and installs each one flat as `<agent>/skills/<skill-name>/`, which is the layout agents load.
@@ -68,3 +69,13 @@ Categories are organizational only. `npx skills add` discovers skills at any dep
 - **idea-edge-cases** — surfaces missing decisions and failure scenarios in unimplemented feature ideas, with a prioritized gap table.
 - **random-word** — runs a lateral-thinking session with De Bono's random stimulus: draws an unrelated word and links it to the problem through stepping-stone chains.
 - **research-to-learning** — turns a topic into deep, verifiable learning material: decomposes it into subtopics, delegates research to subagents, preserves the raw content of every source on disk, verifies relevance and authority, resolves contradictions and gaps, then consolidates a long-form Markdown guide with an optional HTML rendering. Created by JoseCortezz25, version 0.1.0.
+
+### Learning
+
+A pack of skills that work together to study any topic with an agent, from the big picture down through prerequisites, keeping progress in Markdown files. See [skills/learning/README.md](skills/learning/README.md).
+
+- **check-and-review** — checks real understanding and schedules spaced-repetition reviews.
+- **interactive-explorer** — generates a clickable HTML map with progress, glossary, and due reviews.
+- **prerequisite-descent** — explains briefly, finds the missing prerequisite, goes down to something already known, and climbs back reconnecting.
+- **teacher-voice** — how to talk while teaching: short, human, one idea per turn.
+- **topic-map** — builds the big picture of a topic: syllabus, prerequisites, diagram, and starter glossary.
