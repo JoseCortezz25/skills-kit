@@ -30,25 +30,51 @@ jobs:
           # Verificar directorio skills
           if [ -d "skills" ]; then
             echo "✅ skills directory exists"
-            skill_count=$(find skills -maxdepth 1 -type d | wc -l)
-            echo "📁 Found $((skill_count - 1)) skills"
           else
             echo "❌ skills directory missing"
             exit 1
           fi
-          
-          # Verificar que cada skill tenga SKILL.md
-          for skill_dir in skills/*/; do
-            if [ -d "$skill_dir" ]; then
-              skill_name=$(basename "$skill_dir")
-              if [ -f "$skill_dir/SKILL.md" ]; then
-                echo "✅ $skill_name has SKILL.md"
-              else
-                echo "⚠️  $skill_name missing SKILL.md"
-              fi
+
+          # Layout esperado: skills/<categoria>/<skill>/SKILL.md
+          skill_count=0
+
+          for category_dir in skills/*/; do
+            [ -d "$category_dir" ] || continue
+            category=$(basename "$category_dir")
+
+            # Un SKILL.md directo bajo skills/ significa layout plano: no se valida y rompe el contrato
+            if [ -f "$category_dir/SKILL.md" ]; then
+              echo "❌ $category: skills/<name>/SKILL.md is not allowed, use skills/<category>/<name>/SKILL.md"
+              exit 1
             fi
+
+            for skill_dir in "$category_dir"*/; do
+              [ -d "$skill_dir" ] || continue
+              skill_name=$(basename "$skill_dir")
+              skill_count=$((skill_count + 1))
+
+              if [ ! -f "$skill_dir/SKILL.md" ]; then
+                echo "❌ $category/$skill_name missing SKILL.md"
+                exit 1
+              fi
+
+              # El name del frontmatter debe coincidir con el nombre del directorio
+              declared_name=$(sed -n 's/^name:[[:space:]]*//p' "$skill_dir/SKILL.md" | head -1 | tr -d '"'"'"'')
+              if [ "$declared_name" != "$skill_name" ]; then
+                echo "❌ $category/$skill_name: frontmatter name is '$declared_name'"
+                exit 1
+              fi
+
+              echo "✅ $category/$skill_name"
+            done
           done
 
+          if [ "$skill_count" -eq 0 ]; then
+            echo "❌ No skills found under skills/<category>/"
+            exit 1
+          fi
+
+          echo "📁 Found $skill_count skills"
           echo "✅ Repository structure validation passed"
 
       - name: Check Markdown formatting
