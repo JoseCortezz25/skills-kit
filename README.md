@@ -43,6 +43,12 @@ More info: https://skills.sh/
 - **random-word** — runs a lateral-thinking session with De Bono's random stimulus: draws an unrelated word and links it to the problem through stepping-stone chains.
 - **react-19** — React 19 patterns, especially around the React Compiler and memoization.
 - **research-to-learning** — turns a topic into deep, verifiable learning material: decomposes it into subtopics, delegates research to subagents, preserves the raw content of every source on disk, verifies relevance and authority, resolves contradictions and gaps, then consolidates a long-form Markdown guide with an optional HTML rendering. Created by JoseCortezz25, version 0.1.0.
+- **learning pack** (`skills/learning/`) — five skills that work together to learn any topic with an agent, from the big picture down through prerequisites, with progress kept in Markdown files. See [skills/learning/README.md](skills/learning/README.md).
+  - **topic-map** — builds the big picture of a topic: syllabus, prerequisites, diagram, and starter glossary.
+  - **prerequisite-descent** — explains briefly, finds the missing prerequisite, goes down to something already known, and climbs back reconnecting.
+  - **check-and-review** — checks real understanding and schedules spaced-repetition reviews in `learning/review.md`.
+  - **teacher-voice** — how to talk while teaching: short, human, one idea per turn.
+  - **interactive-explorer** — generates a clickable HTML map with progress, glossary, and due reviews.
 - **tailwind-4** — Tailwind CSS 4 styling patterns and best practices.
 - **typescript** — TypeScript strict patterns, types, interfaces, and generics.
 - **zod-4** — Zod 4 schema validation patterns.
